@@ -191,7 +191,7 @@ ax = fig.add_subplot(111)
 strline_label = '$V_S$= ' + str(m_round) +' $I$ + ' + str(c_round)
 plt.xlabel('I/A')
 plt.ylabel('$V_S$/V')
-plt.title('Sample Voltage against Current for B=0T and T=195K')
+plt.title('Sample Voltage against Current for B=0.5T and T=96K')
 
 #NOTE TO USER: "plt.xlim" RESTRICTS WHICH DATA POINTS ARE PLOTTED
 #plt.xlim(xmin=-1,xmax=1)
@@ -204,7 +204,7 @@ ax.scatter(x_data,y_data,linestyle='None',color='blue',label='Raw data')
 ax.plot(x,y_expected,linestyle ='solid',color ='orange',label=strline_label)
 ax.legend()
 
-plt.savefig('195K_B0_COMP_IV.png',dpi=300)
+plt.savefig('96K_B0.5_COMP_IV.png',dpi=300)
 plt.show()
 
 
